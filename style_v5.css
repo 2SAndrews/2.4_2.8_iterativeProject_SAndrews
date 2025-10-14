@@ -1,0 +1,310 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	
+}
+
+
+/*Navigation*/
+
+
+
+
+/*main section*/
+
+#main {
+	background-color: pink;
+	min-height: 70vh;
+	background-size: cover;
+	background-position: bottom center;
+	
+}
+
+#main h1{
+	text-align: center;	
+	
+}
+
+.container {
+	max-width: 1200px;
+	padding: 16px;
+	margin: auto;
+	
+}
+
+
+
+.section-title h1{
+	font-size: 50px;
+	text-align: center;
+	
+}
+
+.section-title hr {
+	width: 150px;
+	height: 4px;
+	border: 10px;
+	background: black;
+	margin-top: -30px;
+	
+	
+}
+
+
+section {
+	margin: 80px auto;	
+	
+}
+
+#welcome h1{
+	text-align: center;	
+	font-size: 70px;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+	
+}
+
+#welcome h2{
+	text-align: center;	
+	font-size: 50px;
+	
+	
+}
+
+
+/*what is eotc headline stopper*/
+
+#headstopper{
+	
+	background-color: #0e015c;
+	
+}
+
+#headstopper .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	height: auto;
+	
+}
+
+#headstopper h1{
+	font-size: 80px;
+	text-align: center;
+	color: white;
+
+}
+
+
+
+
+
+
+
+/*About EOTC*/
+
+#about-eotc{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 120px;	
+}
+
+#about-eotc .container .about-content{
+	
+	max-width: 650px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-wrap: wrap;
+
+}
+
+#about-eotc .container .about-content img {
+	
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	gap: 45px;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	
+}
+
+
+
+
+
+
+
+/*Why not headstopper (2nd headstopper)*/
+
+#headstopper2 {
+		
+	background-color: #a10f0f;
+	
+}
+
+#headstopper2 .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	gap: 16px;	
+}
+
+
+#headstopper2 h1{
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	
+}
+
+/*about more section*/
+
+#about-more img{
+	max-width: 450px;
+	object-fit: cover;
+	vertical-align: middle;
+	
+}
+
+#about-more .image{
+	width: 100%;	
+	
+}
+
+
+#about-more .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+	
+	
+}
+
+
+#about-more .text{
+	flex: 1;
+	flex-wrap: wrap;
+	
+}
+
+
+#about-more {
+	background-color: orange;	
+	
+}
+ 
+
+
+
+/*Activites section*/
+
+.activites {
+	margin-top: 40px;
+	display: flex;
+	gap: 45px;
+	justify-content: center;
+	flex-wrap: wrap;
+		
+}
+
+.activity {
+	width: 500px;
+	
+	
+}
+
+.activity img {
+	max-width: 100%	
+}
+
+.activity img:hover {
+	
+	transform: translateY(-10px);
+	
+}
+
+
+/*question section*/
+
+#question h1{
+	
+	font-size: 100px;
+	text-shadow: 4px 2px 4px #A29C9B;
+	
+}
+
+
+footer {
+	background-color: #eae6ea;	
+	height: auto;
+	position: relative;
+	padding: 50px 100px;
+
+	
+}
+
+footer .container{
+	
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+footer .container .quicklinks h2{
+	
+	position: relative;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 15px;
+		
+	
+}
+
+footer .container .quicklinks2 h2{
+	
+	position: relative;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 15px;
+		
+	
+}
+
+footer .container .contact h2{
+	
+	position: relative;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 15px;
+		
+	
+}
+
+
+
+
+
+@media screen and (max-width: 520px) {
+		
+	#about-eotc .container{
+		
+		flex-direction: cloumn;
+		gap: 16px;
+		
+	}
+}
