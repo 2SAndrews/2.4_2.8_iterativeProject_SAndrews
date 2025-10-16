@@ -1,20 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 body {
 	margin: 0;	
-	
+	font-family: "Open Sans", sans-serif;
 }
 
 
-/*Main Navigation*/
+/*Navigation*/
 
+#sideNav {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: pink;
+	z-index: 2;
+	
+}
 
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+		
+}
+
+#menuBtn{
+	width: 50px;
+	position: fixed;
+	right: 65px;
+	top: 35px;
+	z-index: 2;
+	cursor: pointer;
+	
+}
 
 
 /*main section*/
 
 #main {
-	background-color: blue;
+	background-color: orange;
 	min-height: 70vh;
 	background-size: cover;
 	background-position: bottom center;
@@ -26,7 +59,7 @@ body {
 	
 }
 
-.container { /*All sections have this container to make it easier to make website responsive and control elements*/
+.container {
 	max-width: 1200px;
 	padding: 16px;
 	margin: auto;
@@ -35,9 +68,10 @@ body {
 
 
 
-.section-title h1{ /*All section/heading titles will be h1 and should be big*/
+.section-title h1{
 	font-size: 50px;
 	text-align: center;
+
 	
 }
 
@@ -59,7 +93,8 @@ section {
 
 #welcome h1{
 	text-align: center;	
-	font-size: 50px;
+	font-size: 70px;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 	
 }
@@ -76,7 +111,7 @@ section {
 
 #headstopper{
 	
-	background-color: pink;
+	background-color: #0e015c;
 	
 }
 
@@ -84,14 +119,15 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 500px;
+	max-width: auto;
 	gap: 16px;
 	
 }
 
 #headstopper h1{
-	font-size: 50px;
-	text-align: center
+	font-size: 70px;
+	text-align: center;
+	color: white;
 	
 }
 
@@ -112,7 +148,7 @@ section {
 
 #about-eotc .container .about-content{
 	
-	max-width: 500px;
+	max-width: 650px;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -122,7 +158,7 @@ section {
 
 #about-eotc .container .about-content img {
 	
-	width: 470px;
+	width: 100%;
 	margin-top: 40px;
 	display: flex;
 	gap: 45px;
@@ -142,7 +178,7 @@ section {
 
 #headstopper2 {
 		
-	background-color: blue;
+	background-color: #a10f0f;
 	
 }
 
@@ -150,18 +186,24 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 500px;
+	max-width: auto;
 	gap: 16px;	
 }
 
 
 #headstopper2 h1{
-	font-size: 50px;
-	text-align: center
+	font-size: 70px;
+	text-align: center;
+	color: white;  
 	
 }
 
 /*about more section*/
+
+#about-more {
+	background-color: #0e015c;	
+	
+}
  
 #about-more img{
 	max-width: 550px;
@@ -190,22 +232,53 @@ section {
 
 #about-more .text{
 	flex: 1;
-	flex-wrap: wrap; /*If it exceeds the available space the text should wrap mulitple lines below*/
+	flex-wrap: wrap;/*If it exceeds the available space the text should wrap mulitple lines below*/
 	
 }
 
-
-#about-more {
-	background-color: orange;	
+#about-more h1 {
+	color: white;
 	
 }
+
+#about-more p {
+	color: white;
+}
+
+
+
 
 
 
 /*Activites section*/
 
+.color-line {
+	display: flex;
+	width: 100%;
+	max-width: 400px; 
+	height: 5px;       
+	margin: 20px auto; 
+	margin-top: -30px;
+}
+
+.color-line div {
+	flex: 1; /* Equal width for each color segment */
+}
+
+.blue {
+	background-color: #20367d;
+}
+
+.yellow {
+	background-color: #ffde59;
+}
+
+.red {
+	background-color: #c51e1d;
+}
+
 .activites {
-	margin-top: 40px;
+	margin-top: 80px;
 	display: flex;
 	gap: 45px;
 	justify-content: center;
@@ -224,6 +297,7 @@ section {
 }
 
 .activity img:hover {
+	
 	transform: translateY(-10px);/*When hovered the image will move slightly up*/
 	
 }
@@ -232,59 +306,84 @@ section {
 /*question section*/
 
 #question h1{
+	
 	font-size: 100px;
-
-}
-
-
-footer { /*This footer applies to all pages*/
-	background-color: green;	
-	height: auto;
-	position: relative;
-	padding: 50px 100px;
-
+	text-shadow: 4px 2px 4px #A29C9B;
+		
+	
 	
 }
 
-footer .container{
-	width: 100%;
+/*This footer applies to all pages*/
+
+.footer {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
-	grid-gap: 20px;
-}
-
-footer .container .quicklinks h2{
-	
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	gap: 5.5rem;
+	background: #eae6ea; 
+	padding: 80px 13% 70px;
 	position: relative;
-	color: white;
-	font-weight: 600;
-	margin-bottom: 15px;
-		
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 70px 70px 0 0;
+	margin-bottom: -10px;
 	
 }
 
-footer .container .quicklinks2 h2{
-	
-	position: relative;
-	color: white;
-	font-weight: 600;
-	margin-bottom: 15px;
-		
+.footerlogo{
+	width: 150px;
+	margin-top: 50px;
 	
 }
 
-footer .container .contact h2{
+.footer-content h4{
+	color: black;
+	margin-bottom: 1.5rem;
+	font-size: 20px;
 	
-	position: relative;
-	color: white;
-	font-weight: 600;
-	margin-bottom: 15px;
-		
+	
+}
+
+.footer-content li{
+	margin-bottom: 16px;	
+	list-style-type: none;
+
+	
+}
+
+.footer-content li a{
+	display: block;
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.footer-content li a:hover{
+	color: #a10f0f;
+}
+
+.footer-content{
+	color: #424344;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+
+.footer-content p{
+	text-align: center;
+	margin-left: -100px;
 	
 }
 
 
-
+i {
+	width: 50px;
+	color: black;
+	height: 70px;
+	
+}
 
 
 
@@ -317,6 +416,7 @@ footer .container .contact h2{
 	margin: 0;
 	padding: 20px 0;
 	display: flex;
+	border-radius: 10px;
 	align-items: center;
 	justify-content: center;
 	
@@ -326,7 +426,6 @@ footer .container .contact h2{
 	list-style: none;
 	text-align: center;
 	display: block;
-	
 }
 
 
@@ -337,22 +436,32 @@ footer .container .contact h2{
 	
 }
 
+
+#mini-nav ul li a:link{
+	color: black;	
+	
+}
+
+
+#mini-nav ul li a:visited{
+	color: black;
+	text-decoration: none;
+	
+}
+
+
 #mini-nav hr {
 	width: 50%;
 	
 }
 
-#about-text {
-	background-color: white;
-	
-
-}
 
 
-#about-text h1{
+#about-text h1{ /*ALL HEADLINE STOPPERS SHOULD BE AT LEAST 80px*/
 	color: black;
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 
 }
@@ -367,14 +476,14 @@ footer .container .contact h2{
 	
 }
 
-.slider-images { /* This code basically lines up the images vertically*/
+.slider-images {  /* This code basically lines up the images vertically*/
 	display: flex;
 	align-items: center;
 	gap: 21px;
 	
 }
 
-.slider-images img { /*controls the size of the image*/
+.slider-images img {   /*controls the size of the image*/
 	width: 100%;
 	height: 100%;
 	object-fit: cover;	/*fits in that section*/
@@ -391,25 +500,10 @@ footer .container .contact h2{
 	
 }
 
-.slider-images .slider-img:first-child, /*Controls the cards on the end (cards 1 and 7)*/
-.slider-images .slider-img:last-child{
-	height: 200px;
-	width: 100px;
-	
-}
-
-.slider-images .slider-img:nth-child(2), /*Controls the cards 2 and 6*/
-.slider-images .slider-img:nth-child(6){
-	height: 300px;
-	width: 200px;
-	
-}
-
-.slider-images .slider-img:nth-child(3), /*Controls the cards in the middle (3, 4 and 5)*/
-.slider-images .slider-img:nth-child(4),
-.slider-images .slider-img:nth-child(5){
+ /* Instead of the first child and nth-child this just controls all cards to give the same height and weidth*/
+.slider-images .slider-img{  
 	height: 400px;
-	width: 300px
+	width: 200px;
 	
 }
 
@@ -456,6 +550,12 @@ footer .container .contact h2{
 	
 }
 
+#key-info-headline h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+}
+
 
 #key-info .container{
 	display: flex;
@@ -466,30 +566,57 @@ footer .container .contact h2{
 }
 
 #key-info .box-one {
-	height: 500px;
-	width: 400px;
-	background-color: orange;
+	height: auto;
+	width: 500px;
+	background-color: #efefef;
 	border-radius: 60px;
 
 	
 }
 
+#key-info .box-one-text{
+	margin: 60px 40px 80px 40px	
+}
+
+#key-info .box-one-text p{
+	font-size: 15px;	
+	line-height: 1.9rem;
+}
+
+#key-info .box-one-text h2 a{
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
+}
+
+#key-info .box-one-text h2 a:hover{
+	text-decoration: none;
+	color: #a10f0f;
+}
+
+#key-info .box-one-text h1{
+	font-size: 23px;
+	color: #0e015c;
+}
 
 #key-info .box-two{
-	height: 350px;
-	width: 350px;
-	background-color: pink;
+	height: 400px;
+	width: 400px;
+	background-image: url(../images/placeholder.webp);
+	background-size: cover;
+	background-position: bottom center;
 	border-radius: 10px 30px 30px 10px; 
-
 	
 }
+
+
 
 
 .day-one {
     display: flex; /*Lines up the image with the text (gives the side by side look)*/
     flex-wrap: wrap;
     width: 100vw;       
-    height: auto;
+    height: 600px; 
 	margin-bottom: -80px;
 }
 
@@ -499,24 +626,33 @@ footer .container .contact h2{
 }
 
 
-.text-content {
-    display: flex;
+.day-one .text-content {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
     flex-direction: column;
     justify-content: center;
-    background-color: #f8f8f8; /*background color for the text bit */
+    background-color: #0e015c; /*background color for the text bit */
 	word-wrap: break-word; /*makes sure that the words don't go out of the box where the text is and goes into the image*/
 }
 
 
-.text-content h2 {
-    padding-left: 20px;
+.day-one .text-content h2 {
+    margin-left: 40px;
+	color: white;
+	margin-top: 30px;
+	font-size: 30px;
 
 }
 
 
-.text-content p{
-    padding-left: 20px;
-    
+.day-one .text-content p{
+    margin-left: 40px;
+	margin-right: 50px;
+	color: white;
+	font-size: 15px;
+	line-height: 1.5rem;
+	margin-bottom: -10px;
+	
+
 }
 
 
@@ -540,8 +676,8 @@ footer .container .contact h2{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100vw;       
-	height: auto;
-	margin-bottom: -10px;
+	height: 600px;
+	margin-bottom: 100px;
 }
 
 .image-container, .text-content {
@@ -561,30 +697,42 @@ footer .container .contact h2{
 	display: block;
 }
 
-.text-content {
+.day-two .text-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #f8f8f8; 
+	background-color: white; 
 	word-wrap: break-word;
+	line-height: 1.5rem;
 
 }
 
-.text-content h2 {
-	padding-left: 20px;
+.day-two .text-content h2 {
+	margin-left: 40px;
+	color: #20367d;
+	font-size: 30px;
+	margin-top: 40px;
 }
 
-.text-content p {
-	padding-left: 20px;
+.day-two .text-content p {
+	margin-left: 40px;
+	margin-right: 60px;
+	color: #20367d;
+	font-size: 15px;
+	line-height: 1.5rem;
+	margin-bottom: -10px;
 }
 
 
-
-
-#important-text {  /*This applied to all ids with important in that html page*/
-	font-size: 50px;
-	text-align: center;
+#important-text{
+	position: sticky	
 	
+}
+
+#important-text h1{ /*This applied to all ids with important in that html page*/
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #ffd737;
 	
 }
 
@@ -594,7 +742,7 @@ footer .container .contact h2{
 }
 
 #timings .container{
-	width: 100%;
+	width: 100%
 	margin: auto;
 	
 }
@@ -617,9 +765,10 @@ footer .container .contact h2{
 
 #timings hr{
 	height: 5px;
-	background-color: black;
+	background-color: #ffd737;
 	width: 40%;
 	margin-top: -20px;
+	border: #ffd737;
 	
 }
 
@@ -683,7 +832,20 @@ footer .container .contact h2{
 }
 
 
-#gear-list h1 {  /*This applied to all ids with important in that html page*/
+#gear-list .gear-list-camp {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	
+
+}
+
+#gear-list .gear-list-camp form h1{
+	font-size: 40px;	
+	
+}
+
+#gear-list h1 { /*This applied to all ids with important in that html page except the camp wainui one*/
 	font-size: 50px;
 	text-align: center;
 	
@@ -691,10 +853,11 @@ footer .container .contact h2{
 
 #gear-list hr {
 	height: 5px;
-	background-color: black; 
-	width: 40%;
+	background-color: #c51e1d;
+	border: #c51e1d;
+	width: 30%;
 	margin-top: -20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	
 }
 
@@ -716,6 +879,7 @@ footer .container .contact h2{
 	display: inline-block;
 	color: #666;
 	line-height: 25px;
+	font-size: 18px;
 	
 }
 
@@ -731,7 +895,7 @@ footer .container .contact h2{
 	
 }
 
-[type="checkbox"]:checked + label::before{ /*There will be no checked box before it is clicked*/
+[type="checkbox"]:checked + label::before{/*There will be no checked box before it is clicked*/
 	content: "";
 	position: absolute;
 	left: 0;
@@ -744,7 +908,7 @@ footer .container .contact h2{
 }
 
 
-[type="checkbox"]:checked + label::after{  /*after it is cliked the image in image background will appear*/
+[type="checkbox"]:checked + label::after{ /*after it is cliked the image in image background will appear*/
 	content: "";
 	position: absolute;
 	left: 0;
@@ -777,15 +941,16 @@ footer .container .contact h2{
 /*Important reminders section*/
 
 #reminder h1{
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 }
 
 
 #reminder-one {
 	
-	background-color: pink;
+	background-color: #20367d;
 }
 
 #reminder-one img {
@@ -817,18 +982,19 @@ footer .container .contact h2{
 }
 
 
-
-
 #reminder-two img {
-	
 	max-width: 550px;
 	object-fit: cover;
 	vertical-align: middle;
-	
-	
 }
 
+#reminder-two .text p a{
+	color: #0e015c;
+}
 
+#reminder-two .text p a:hover{
+	color: #a10f0f;
+}
 
 
 #reminder-two .container{
@@ -837,19 +1003,19 @@ footer .container .contact h2{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
-	gap: 5rem;
-	
-	
+	gap: 5rem;	
 }
+
 
 #reminder-two .text {
 	flex: 1	;
 	
 }
 
+
 #reminder-three {
 	
-	background-color: pink;
+	background-color: #20367d;
 }
 
 
@@ -906,6 +1072,20 @@ footer .container .contact h2{
 	
 }
 
+#reminder-one .text p,
+#reminder-three .text p{
+	color: #fff;
+	line-height: 1.9rem;
+	
+}
+
+
+#reminder-two .text p,
+#reminder-four .text p{
+	color: #0e015c;
+	line-height: 1.9rem;
+	
+}
 
 
 
@@ -915,15 +1095,16 @@ footer .container .contact h2{
 /*About adrenaline forest*/
 
 #adrenaline-headline h1{
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 		
 }
 
 
 #forest {
-	
-	background-color: pink;
+	background-color: #efefef;
+	line-height: 1.9rem;
 }
 
 #forest img {
@@ -933,6 +1114,47 @@ footer .container .contact h2{
 	vertical-align: middle;
 	border-radius: 50px;
 	
+	
+}
+
+#forest h1{
+	font-size: 35px;
+	color: #0e015c;
+	
+}
+
+#forest h2{
+	font-size: 20px;
+	
+	
+}
+
+#forest p{
+	font-size: 16px;	
+	
+}
+
+#forest a{
+	text-decoration: none;	
+}
+
+#forest h2 a:link{
+	color: black;	
+	
+}
+
+#forest h2 a:active{
+	color: black;
+	
+	
+}
+
+#forest h2 a:visited{
+	color: black;
+}
+
+#forest h2 a:hover{
+	color: #a10f0f;
 	
 }
 
@@ -960,15 +1182,59 @@ footer .container .contact h2{
 
 
 #pool-headline{
-	background-color: yellow;	
+	background-color: #0e015c;	
 }
-
 
 #pool-headline h1 {
-	font-size: 50px;
+	font-size: 80px;
 	text-align: center;
+	color: white;
 	
 }
+
+#pool {
+	background-color: #efefef;
+	line-height: 1.9rem;
+	
+}
+
+#pool h1{
+	font-size: 35px;
+	color: #0e015c;
+	
+}
+
+#pool h2{
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+#pool a{
+	text-decoration: none;	
+}
+
+#pool h2 a:active{
+	color: black;
+	
+	
+}
+
+#pool h2 a:visited{
+	color: black;
+}
+
+#pool h2 a:hover{
+	color: #a10f0f;
+	
+}
+
+#pool p{
+	font-size: 16px;
+	
+}
+
+
 
 
 
@@ -992,7 +1258,6 @@ footer .container .contact h2{
 	justify-content: space-around;
 	gap: 5rem;
 	
-	
 }
 
 #pool .text {
@@ -1000,40 +1265,106 @@ footer .container .contact h2{
 	
 }
 
+
+
+
+
 /*Key information about both activites*/
 
 .forest-keyinfo1 {
-    display: flex;
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
     flex-wrap: wrap;
     width: 100vw;       
-    height: auto;
+    height: 600px; 
 	margin-bottom: -80px;
 }
+
+.forest-keyinfo1 .text-content {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0e015c; /*background color for the text bit */
+	word-wrap: break-word; /*makes sure that the words don't go out of the box where the text is and goes into the image*/
+}
+
+
+.forest-keyinfo1 .text-content h2 {
+    margin-left: 40px;
+	margin-right: 50px;
+	color: white;
+	margin-top: 30px;
+	font-size: 30px;
+	line-height: 2.3rem;
+	
+
+}
+
+
+.forest-keyinfo1 .text-content p{
+    margin-left: 40px;
+	margin-right: 50px;
+	color: white;
+	font-size: 16px;
+	line-height: 1.9rem;
+	margin-bottom: -10px;
+	
+
+}
+
+
 
 .forest-keyinfo2 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100vw;       
-	height: auto;
+	height: 600px;
 	margin-bottom: -10px;
 }
 
 
 
-#last-headline {
-	text-align: center;
+.forest-keyinfo2 .text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white; 
+	word-wrap: break-word;
+	line-height: 1.5rem;
+
+}
+
+.forest-keyinfo2 .text-content h2 {
+	margin-left: 40px;
+	color: #20367d;
 	font-size: 30px;
+	margin-top: 40px;
+	margin-right: 50px;
+	line-height: 2.3rem;
+}
+.forest-keyinfo2 .text-content p {
+	margin-left: 40px;
+	margin-right: 60px;
+	color: #20367d;
+	font-size: 16px;
+	line-height: 1.9rem;
+	margin-bottom: -10px;
+}
+
+#last-headline h1{
+	text-align: center;
+	font-size: 80px;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 }
 
 
 
-
 /*Page 4*/
 
-#nature-healine {
-	font-size: 40px;
+#nature-healine h1 {
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 }
 
@@ -1048,31 +1379,57 @@ footer .container .contact h2{
 }
 
 #rangi-info .box-one {
-	height: 500px;
-	width: 400px;
-	background-color: orange;
+	height: auto;
+	width: 500px;
+	background-color: #efefef;
 	border-radius: 60px;
 
+	
+}
+
+#rangi-info .box-one-text{
+	margin: 50px 30px 80px 30px;
+	
+}
+
+#rangi-info .box-one-text p{
+	font-size: 16px;
+	line-height: 1.9rem;
+	
+}
+
+#rangi-info .box-one-text h2{
+	font-size: 18px;	
+	
+}
+
+#rangi-info .box-one-text h1{
+	font-size: 21px;	
 	
 }
 
 
 #rangi-info .box-two{
 	height: 400px;
-	width: 350px;
-	background-color: pink;
-	border-radius: 10px 30px 30px 10px; 
-
-	
-}
-
-#view-headline {
-	font-size: 40px;
-	text-align: center;
-		
+	width: 400px;
+	background-image: url(../images/placeholder.webp);
+	background-size: cover;
+	background-position: bottom center;
+	object-fit: cover;
+	border-radius: 10px 30px 30px 10px;
 }
 
 /*image carousel to show the views*/
+
+#view-headline {
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+		
+}
+
+
+
 
 #image-carousel2{
 	justify-content: center;
@@ -1144,49 +1501,44 @@ footer .container .contact h2{
 }
 
 
-.text-content {
+.rangikey-info .text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f8f8f8; /* change color when needed */
+    background-color: #0e015c; /* background color for the text section */
 	word-wrap: break-word;
 }
 
 
-.text-content h2 {
-    padding-left: 20px;
+.rangikey-info .text-content h2 {
+    margin-left: 50px;
+	color: white;
 
 }
 
 
-.text-content p{
-    padding-left: 20px;
-    
+.rangikey-info .text-content p{
+    margin-left: 50px;
+	color: white;
+	margin-right: 100px;
+	line-height: 1.9rem;
+	font-size: 15px;
 }
 
 
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 
-.right-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 
-}
+
+
 
 
 /*Page 5*/
 
-#community-headline{
-	font-size: 40px;
+#community-headline h1{
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 }
 
@@ -1200,10 +1552,33 @@ footer .container .contact h2{
 	margin-bottom: -80px;
 }
 
+.community-about .text-content p{
+	color: white;
+	margin-right: 100px;
+	line-height: 1.9rem;
+	font-size: 16px;
+	margin-left: 30px;
+	
+}
 
-#community-headline2{
-	font-size: 40px;
+.community-about .text-content h2{
+	margin-left: 30px;
+	margin-top: 150px;
+	font-size: 30px;
+	color: white;
+	
+}
+
+.community-about .text-content{
+	background-color: #a10f0f;	
+	
+}
+
+
+#community-headline2 h1{
+	font-size: 80px;
 	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
 	
 }
 
@@ -1217,7 +1592,27 @@ footer .container .contact h2{
 	margin-bottom: -80px;
 }
 
+.community-keyinfo .text-content {
+	background-color: #0e015c;	
+	
+}
 
+.community-keyinfo .text-content p{
+	color: white;
+	margin-right: 80px;
+	line-height: 1.9rem;
+	font-size: 16px;
+	margin-left: 30px;
+	
+}
+
+.community-keyinfo .text-content h2{
+	margin-left: 30px;
+	margin-top: 50px;
+	font-size: 30px;
+	color: white;
+	
+}
 
 
 
@@ -1242,8 +1637,8 @@ footer .container .contact h2{
 
 #contact .form{
 	width: 100%;
-	height: 550px;
-	max-width: 820px;
+	height: 600px;
+	max-width: 900px;
 	background-color: #fff; /*This is for the background of the WHOLE form*/
 	border-radius: 10px;
 	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
@@ -1256,7 +1651,7 @@ footer .container .contact h2{
 
 /*contact form fill out on the right*/
 .contact-form{
-	background-color: pink;
+	background-color: #0e015c;
 	position: relative;
 }
 
@@ -1270,10 +1665,10 @@ footer .container .contact h2{
 }
 
 .title{
-	color: black;
+	color: #fff;
 	font-weight: 500;
 	font-size: 1.5rem;
-	line-height: 5px;
+	line-height: `;
 	margin-bottom: 0.7rem;
 	
 }
@@ -1286,14 +1681,13 @@ footer .container .contact h2{
 
 
 .input {
-	width: 80%;
+	width: 90%;
 	outline: none;
-	border: 2px solid white;
+	border: 2px solid #fff;
 	background: none;
 	padding: 0.6rem 1.2rem;
-	color: blue;
+	color: #fff;
 	border-radius: 25px;
-	transition: 0.3s;
 	
 }
 
@@ -1312,12 +1706,11 @@ textarea.input{
 	left: 15px;
 	transform: translateY(-50%);
 	padding: 0 0.4rem;
-	color: red;
+	color: #fff;
 	font-size: 0.9rem;
 	pointer-events: none;
 	z-index: 1000;
-	transition: 0.5s;
-	background-color: pink;
+	background-color: #0e015c;
 }
 
 .input-container.textarea label{
@@ -1331,6 +1724,7 @@ textarea.input{
 	background-color: #fff;
 	border: 2px solid white;
 	font-size: 0.95rem;
+	font-weight: 700;
 	border-radius: 25px;
 	outline: none;
 	cursor: pointer;
@@ -1339,7 +1733,7 @@ textarea.input{
 }
 
 .btn:hover{
-	background-color: black;
+	background-color: #f6b618;
 	color: white;
 }
 
@@ -1361,9 +1755,9 @@ textarea.input{
 	position: absolute;
 	width: 10%;
 	opacity: 0;
-	transition: 0.3s;
+	transition: 0.3s
 	height: 5px;
-	background-color: pink;
+	background-color: #0e015c;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -1387,7 +1781,7 @@ textarea.input{
 	
 }
 
-#contact .icon{
+.#contact .icon{
 	width: 28px;
 	margin: 0.7rem;
 	
@@ -1408,7 +1802,7 @@ textarea.input{
 
 .text {
 	color: black;
-	margin: 1.5rem 0 2rem 0;
+	margin: 1.5rem 0 2 rem 0;
 	
 }
 
@@ -1417,7 +1811,7 @@ textarea.input{
 	color: black;
 	margin: 0.7rem 0;
 	align-items: center;
-	font-size: 0.95rem;
+	font-size: 0.95fdm
 	
 }
 
@@ -1495,7 +1889,7 @@ textarea.input{
 	.footer{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(150px, auto)); /*Makes as many columns as possible to fit in space,
-																		each column should be at least 150px*/
+																	each column should be at least 150px*/
 		gap: 2.5rem; /*gap between columns*/
-	}
+	
 }
