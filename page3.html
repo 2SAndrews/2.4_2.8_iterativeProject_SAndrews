@@ -6,6 +6,8 @@
 <head>
 
     <title>EOTC | ADRENALINE FOREST + TE RAUPARAHA AQUATIC CENTER</title>
+	
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
 
 		<meta charset="utf-8">
 
@@ -21,8 +23,8 @@
 
 
 <!-- Import the web page's style sheet and Javascript librarys -->
-	<link rel="stylesheet" href="css/style_v3.css">
-	<script src="https://kit.fontawesome.com/ab3ad18ef2.js" crossorigin="anonymous"></script> <!--For icons-->
+	<link rel="stylesheet" href="css/style_v9.css">
+	<script src="https://kit.fontawesome.com/ab3ad18ef2.js" crossorigin="anonymous"></script><!--For icons-->
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script><!--For smooth scroll-->
    
 
@@ -31,9 +33,53 @@
 
 <body>
 <!-- This is where my website content goes -->
+	
+	<nav id="sidenav">
+		<ul>	
+			<li><a href="index_v8.html">HOME</a></li>
+			<li><a href="page2_v4.html">CAMP WAINUI</a></li>
+			<li><a href="page3_v3.html">ADRENALIN + POOL</a></li>
+			<li><a href="page4_v3.html">RANGITUHI WALK</a></li>
+			<li><a href="page5_v3.html">COMMUNITY SERVICE</a></li>
+			<li><a href="page6_v3.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<div class="menu"  id="menuBtn">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+	
+	<!--THIS IS THE CODE IS FOR THE SIDE NAV TO APPEAR-->
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidenav = document.getElementById("sidenav");
+		
+		sidenav.style.right = "-400px";
+        menuBtn.onclick = function() {
+		// toggle nav position
+		if (sidenav.style.right == "-400px") {
+		  sidenav.style.right = "0";
+		} else {
+		  sidenav.style.right = "-400px";
+		}
+		
+	  // toggle burger animation
+       this.classList.toggle("change");	
+		}	
+	
+	</script>
 
-	<div id="header">
+	
+	
+		<div id="adren-header">
 		<div class="container">
+			<div class="logo-container">
+			<img src="images/logo.png" class="logo">
+				
+		 </div>
+			<h1>ADRENALIN FOREST<br>+ TE RAUPARAHA AQUATIC CENTER</h1>
 		 </div>
 	</div>
 	
@@ -44,36 +90,44 @@
 			<ul>
 				<li>
 					<a href="#forest">
-						<div class="icon">
+						<div class="mini-icon">
+							<i class="fa-solid fa-circle-info"></i>
 						</div>
-						<div class="name" data-text="About">Ipsum</div>
+						<div class="name" data-text="About">About</div>
 					</a>
 				</li>
 				
 				<li>
 					<a href="#timings">
-						<div class="icon">
+						<div class="mini-icon">
+							<i class="fa-solid fa-clock"></i>
 						</div>
-						<div class="name" data-text="Timings">Ipsum</div>
+						<div class="name" data-text="Timings">Timings</div>
 					</a>
 				</li>
 				
 				<li>
 					<a href="#gear-list">
-						<div class="icon">
+						<div class="mini-icon">
+							<i class="fa-solid fa-clipboard-list"></i>
 						</div>
-						<div class="name" data-text="Gear">Ipsum</div>
+						<div class="name" data-text="Gear">Gear</div>
 					</a>
 				</li>
 			</ul>
-		  <hr>
+		  <div class="color-line">
+		<div class="blue"></div>
+		<div class="yellow"></div>
+		<div class="red"></div>
+	</div>
+
 		</div>
 	</section>
-
+	
 	<!--About adrenaline forest-->
 	<section id="adrenaline-headline">
 		<div class="container">
-			<h1>HEADINGSTOPPER 1</h1>
+			<h1>GET TO <span style="color:#ffd737">TEST</span> YOUR LIMITS AT ADRENALINE FOREST</h1>
 		</div>
 	</section>
 	
@@ -81,66 +135,73 @@
 	<div id="forest">
 		<div class="container">
 			<div class="text">
-			<h1>Header</h1>
-				<p>Mini paragraph goes here</p>
+			<h1>Adrenaline Forest</h1>
+				<h2><a href = "https://www.google.com/maps/place/Adrenalin+Forest+Wellington/@-41.1249532,174.8475508,17z/data=!3m1!4b1!4m6!3m5!1s0x6d3f5381953265ed:0xa67f2959218bf1a2!8m2!3d-41.1249533!4d174.8524164!16s%2Fg%2F1tdyftxv?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Okowai Road, Aotea, Porirua 5022</a></h2>
+				<p>Challenge your strength, endurance, and mindset at Adrenaline Forest, where you'll navigate through various obstacles and climb to thrilling new heights. With each level more intense than the last, the real question is... Do you have what it takes to conquer Level 6?</p>
 			</div>
 			<div class="image">
-				<img src="images/placeholder.webp" alt="placeholder image"><!--Note: always add alt for people who use screen readers for accessbility-->
+				<img src="images/adrenalinforest.jpg" alt="adrenalin forest trees"><!--Note: always add alt for people who use screen readers for accessbility-->
 			</div>
+		</div>
+	</div>
+	
+	<div id="pool-headline">
+		<div class="container">
+			<h1>THEN <span style="color:#ffd737">RELAX</span> AT THE POOL</h1>
 		</div>
 	</div>
 	
 	<!--About te rauparaha arena aquatic center-->
 	
-	<div id="pool-headline">
-		<div class="container">
-			<h1>HEADINGSTOPPER 2</h1>
-		</div>
-	</div>
-	
 	<div id="pool">
 		<div class="container">
 			<div class="image">
-				<img src="images/placeholder.webp" alt="placeholder image">
+				<img src="images/pool.jpg" alt="people swimming at the pool">
 			</div>
 			<div class="text">
-			<h1>Header</h1>
-				<p>Mini paragraph goes here</p>
+			<h1>TE RAUPARAHA ARENA</h1>
+				<h2><a href="https://www.google.com/maps/place/Te+Rauparaha+Arena+and+Aquatic+Centre/@-41.132307,174.8356842,17z/data=!3m2!4b1!5s0x6d3f537301b517df:0x6c9652c5bc986b1a!4m6!3m5!1s0x6d3f53731b3d17c9:0x6ac1b5686e1f0c1f!8m2!3d-41.132307!4d174.8382645!16s%2Fg%2F1tfp_0gp?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+					17 Parumoana Street, Porirua City Centre, Porirua 5022</a></h2>
+				<p>Students are welcome to enjoy full access to every part of the aquatic facility, including the relaxing sauna, spa, thrilling slides, and both pools. It’s the perfect time to unwind, have fun, and make lasting memories with your friends</p>
 			</div>
 		</div>
 	</div>
+	
+	<section id="key-info-headline">
+		<div class="container">
+			<h1><span style="color:#ffd737">KEY</span> INFORMATION</h1>
+		</div>
+	</section>
 	
 	<!--Key information for students-->
 	<section class="forest-keyinfo1">
 		<div class="text-content">
-			  <h2>Heading</h2>
-			  <p>Paragraph goes here</p>
+			  <h2>Students will meet at Tawa Train station where the roll will be taken.</h2>
+			  <p> Please gather with your form class for the roll and if you are running late, you must find a teacher and let them know you have arrived. Students will catch the 8.28am train to Porirua and then walk as a group to Adrenalin Forest. We need to catch this earlier train to ensure we start climbing on time. If Students absolutely cannot make this train (as I realise that it is before the start of school time) there will be one teacher waiting at the train station for any late students and they will catch the 8.48am train. This is an absolute back up and is only an option for those that cannot possibly make it earlier. These students will be late for the start of the climbing and will not get their full 3 hours.</p>
 		</div>
 			<div class="image-container">
-			  <img src="images/placeholder.webp"  class="right-image"  alt="placeholder image" />
+			  <img src="images/a_forest_waiting.jpg"  class="right-image"  alt="placeholder image" />
 			</div>
-  	</section>
+  </section>
 	
 	
 	<section class="forest-keyinfo2">
 		  <div class="image-container">
-			<img src="images/placeholder.webp" alt="placeholder image" class="left-image" />
+			<img src="images/a_forest_briefing_2 (1).jpg" alt="placeholder image" class="left-image" />
 		  </div>
 		  <div class="text-content">
-			<h2>Heading</h2>
-			<p>paragraph text goes here.</p>
+			<h2>If your whanau lives in Porirua and Students will meet us at Adrenalin Forest</h2>
+			<p>please wait at the entrance to Adrenalin Forest and let a teacher know when the group gets there so we can update the roll and let school know you are in our care.</p><br>
+
+<p>After a safety briefing students have 3 hours to climb and test yourselves. After having some lunch we will leave Adrenalin Forest and walk to Te Rauparaha Arena, where students have use of the whole of the main pool, spas, sauna, steam room, hydroslide and deep water swimming lane. If Students are not swimming there is an outside area off the side of the main pool where they can relax.</p><br>
+
+<p>If you indicated on the permission form that Students can leave by themselves directly from the pool as they live in the local area, they will be dismissed from here at around 2.15pm.</p><br>
+
+<p>The rest of the group will walk back to Porirua station and catch the 2.39pm train back to Tawa Station where they will be dismissed.</p>
 		  </div>
 	</section>
 	
 	
-<!--Imporant information-->	
-	
-	<section id="important-text">
-		<div class="container">
-			<h1>HEADING 3</h1>
-			
-		</div>
-	</section>
 	
 	<!--Timings-->
 		<section id="timings">
@@ -153,39 +214,37 @@
 			<div class="icons">
 				<div class="icon">
 					<div class="image-section">
-						<img src="images/placeholder.webp">
+						<i class="fa-solid fa-clock"></i>
 					</div>
 					<div class="icon-content">
 						<h4>TIME</h4>
-						<p>lorem ipsum</p>
+						<p>Before 8:28am</p>
 					</div>
 				</div>
 				
 				<div class="icon">
 					<div class="image-section">
-						<img src="images/placeholder.webp">
+						<i class="fa-solid fa-location-dot"></i>
 					</div>
 					<div class="icon-content">
-						<h4>PLACE</h4>
-						<p>lorem ipsum</p>
+						<h4>LOCATION</h4>
+						<p>Tawa train station</p>
 					</div>
 				</div>
 				
 				<div class="icon">
 					<div class="image-section">
-						<img src="images/placeholder.webp">
+						<i class="fa-solid fa-calendar-days"></i>
 					</div>
 					<div class="icon-content">
 						<h4>DATE</h4>
-						<p>lorem ipsum</p>
+						<p>TBC</p>
 					</div>
 				</div>
 				
 			</div>
 		</div>
 	</section>
-	
-	<!--Gear list-->
 	
 	<section id="gear-list">
 		<div class="container">
@@ -194,71 +253,75 @@
 			<form>
 				<p>
 					<input type="checkbox" id="test" name="gear">
-					<label for="test">Item 1</label>
+					<label for="test">Lunch</label>
 				</p>
 				
 				<p>
 					<input type="checkbox" id="test2" name="gear">
-					<label for="test2">Item 2</label>
+					<label for="test2">Water bottle</label>
 				</p>
 				
 				<p>
 					<input type="checkbox" id="test3" name="gear">
-					<label for="test3">Item 3</label>
+					<label for="test3">Swimming togs + sports wear</label>
 				</p>
 				
 				<p>
 					<input type="checkbox" id="test4" name="gear">
-					<label for="test4">Item 4</label>
+					<label for="test4">Clothes accoring to weather</label>
 				</p>
 				
 				<p>
 					<input type="checkbox" id="test5" name="gear">
-					<label for="test5">Item 5</label>
+					<label for="test5">Medication</label>
 				</p>
 				
 			</form>
 				
 		</div>
 	</section>
+
+
 	
 	<!--Video will go here-->
 	<section id="last-headline">
 		<div class="container">
-			<h1>HEADSTOPPER 4</h1>
+			<h1>HERE IS A LITTLE <span style="color:#ffd737">SNEAK PEAK</span> OF THE DAY</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Td_B9GLL4Mg?si=XGdeXrDr77C03vt2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		</div>
 	</section>
 	
 	
 	<!--footer goes here-->	
-	<footer>
-		<div class="container">
-			<div class="logo">
-				<h1>LOGO GOES HERE</h1>
-			</div>
-			<div class="quicklinks">
-				<h2>Links</h2>
-			
-			</div>
-	
-			<div class="quicklinks2">
-				<h2>Links2</h2>
-				
-			</div>
-				
-			<div class="contact">
-				<h2>Contact</h2>
-				<ul class="info">
-					
-				</ul>
-			</div>
+	<section class="footer">
+		<div class="footer-content">
+			<img src="images/logo.png" class="footerlogo">
+			<p>Copyright © Tawa College 2025<br> 
+				All Rights Reserved </p>
 		</div>
-	</footer>
+		
+		<div class="footer-content">
+			<h4>QUICKLINKS</h4>
+			<li><a href="index_v8.html">Home</a></li>
+			<li><a href="page2_v4.html">Camp Wainui</a></li>
+			<li><a href="page4_v3.html">Rangituhi walk</a></li>
+			<li><a href="page5_v3.html">Community Service</a></li>
+			<li><a href="page6_v3.html">Contact</a></li>
+		</div>
+		
+		<div class="footer-content">
+			<h4>CONTACT</h4>
+			<li><i class="fa-solid fa-phone"></i>+64 4324 818</li>
+			<li><i class="fa-solid fa-envelope"></i>Secetary@tawacollege.school.nz</li>
+			<li><a href="https://www.google.com/maps/place/Tawa+College/@-41.1649001,174.8290334,17z/data=!3m1!4b1!4m6!3m5!1s0x6d38accc90e953a3:0x233e7c6fb066360a!8m2!3d-41.1649001!4d174.8316137!16zL20vMGd6X3lj?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D"></a><i class="fa-solid fa-location-dot"></i>34 Duncan Street, Tawa, Wellington</li>
+		</div>
+		
+	</section>
 	
 	
 	
 	<script>
-		var scroll = new SmoothScroll('a[href*="#"]'); //this will create the smooth scroll effect when the mini nav bar is used 
+		var scroll = new SmoothScroll('a[href*="#"]');//this will create the smooth scroll effect when the mini
 	</script>
 	
 	
