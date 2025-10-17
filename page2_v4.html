@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <title>EOTC | CAMP WAINUIOMATA</title>
+	
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+
+		<meta charset="utf-8">
+
+		<meta name="keywords" content="EOTC, Tawa, Tawa College"/>
+
+		<meta name="author" content="Sherlyn Andrews"/>
+
+		<meta name="description" content="Everything to know about EOTC week."/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	 <!-- Import the web page's style sheet -->
+		<!-- Import the web page's style sheet -->
+	<link rel="stylesheet" href="css/style_v9.css">
+	<!--script src="script_v1.js"></script-->
+	<script src="https://kit.fontawesome.com/ab3ad18ef2.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script><!--For smoothscroll-->
+
+
+  
+</head>
+	
+<body>
+	
+	<nav id="sidenav">
+		<ul>	
+			<li><a href="index_v8.html">HOME</a></li>
+			<li><a href="page2_v4.html">CAMP WAINUI</a></li>
+			<li><a href="page3_v3.html">ADRENALIN + POOL</a></li>
+			<li><a href="page4_v3.html">RANGITUHI WALK</a></li>
+			<li><a href="page5_v3.html">COMMUNITY SERVICE</a></li>
+			<li><a href="page6_v3.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<div class="menu"  id="menuBtn">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+	
+	<!--THIS IS THE CODE IS FOR THE SIDE NAV TO APPEAR-->
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidenav = document.getElementById("sidenav");
+		
+		sidenav.style.right = "-400px";
+        menuBtn.onclick = function() {
+		// toggle nav position
+		if (sidenav.style.right == "-400px") {
+		  sidenav.style.right = "0";
+		} else {
+		  sidenav.style.right = "-400px";
+		}
+		
+	  // toggle burger animation
+       this.classList.toggle("change");	
+		}	
+	
+	</script>
+	
+	
+	
+	
+	<div id="camp-header">
+		<div class="container">
+			<div class="logo-container">
+				<a href="index_v8.html"><img src="images/logo.png" class="logo" alt="Tawa college logo"></a>				
+		 </div>
+			<h1>CAMP WAINUIOMATA</h1>
+		 </div>
+	</div>
+	
+	
+		<section id="mini-nav">
+	  		<div class="container">
+				<ul>
+					<li>
+						<a href="#key-info">
+							<div class="mini-icon">
+								<i class="fa-solid fa-circle-info"></i>
+							</div>
+							<div class="name" data-text="About">About</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="#timings">
+							<div class="mini-icon">
+								<i class="fa-solid fa-clock"></i>
+							</div>
+							<div class="name" data-text="Timings">Time</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="#gear-list">
+							<div class="mini-icon">
+								<i class="fa-solid fa-clipboard-list"></i>
+							</div>
+							<div class="name" data-text="Gear">Gear list</div>
+						</a>
+					</li>
+
+					<li>
+						<a href="#reminder">
+							<div class="mini-icon">
+								<i class="fa-solid fa-circle-exclamation"></i>
+							</div>
+							<div class="name" data-text="Reminder">Reminders</div>
+						</a>
+					</li>
+
+				</ul>
+		    <div class="color-line">
+				<div class="blue"></div>
+				<div class="yellow"></div>
+				<div class="red"></div>
+			</div>
+		</div>
+	</section>
+	
+	
+		<!-- What is Camp wainui -->
+	
+	<section id="about-text">
+		<div class="container">
+			<h1>WHAT IS THERE TO <span style="color:#ffd737">DO?</span></h1>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<!-- image carousel -->
+	
+
+	<section id="image-carousel">
+		  <div class="container">
+				<div class="slider-images">
+					<div class="slider-img">
+						<img src="images/rafting.jpg" alt="1">
+						<h1>Rafting</h1>
+					</div>
+					<div class="slider-img">
+						<img src="images/bridge.jpg" alt="students on a bridge">
+						<h1>Hiking</h1>
+					</div>
+					<div class="slider-img">
+						<img src="images/camp_fire.jpg" alt="students around a camp fire">
+						<h1>Skills</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script><!-- jQuery library link, the java script below won't work if this isnt here -->
+	
+	
+	 <script>
+	 $(document).ready(function() {
+    $('.slider-img').on('click', function() {		
+      $('.slider-img').css({
+        width: '110px', //makes the other cards stay this size when the active card is clicked
+        height: '', 
+        zIndex: '',
+      });
+
+      // when the card is clicked it expands
+      $(this).css({
+        width: '500px',
+        height: '600px',
+        zIndex: 10
+      });
+    });
+  });
+		 
+	</script> 
+	
+	<section id="key-info-headline">
+		<div class="container">
+			<h1><span style="color:#ffd737">KEY</span> INFORMATION</h1>
+		</div>
+	</section>
+	
+	<!-- Key Informatioin -->
+	
+	<section id="key-info">
+		<div class="container">
+			<div class="box-one">
+				<div class="box-one-text">
+					<h1>CAMP WAINUIOMATA</h1>
+					<h2><a href="https://www.google.com/maps/place/Camp+Wainui/@-41.2928034,174.9465541,17z/data=!3m1!4b1!4m6!3m5!1s0x6d4757d2f41903c1:0x1ea9e67138a37bf0!8m2!3d-41.2928034!4d174.9491344!16s%2Fg%2F1tk9qz51?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D">203 Coast Road, Wainuiomata, Wellington 5373</a></h2> 
+					<p>Camp Wainui is a fantastic camping site known for its stunning scenery and exciting range of outdoor activities they provide. Surrounded by beautiful terrain, where students will learn how to pitch their tents, dive into new challenges and spend time with their friends. Over the course of two days, you'll have the chance to a variety of activities. This included raft building, tramping and team challenges that will test your creativity and cooperation. There’s something for everyone, and an opportunity for students to make beautiful memories. Camp Wainuiomata isn’t just a place to visit, it’s a place to explore, bond, and have lots of fun!
+					</p>
+				</div>
+			</div>
+			<div class="box-two">
+				<p><strong>Attribution: Camp Wainui, Photo by Mia Harada</strong></p>
+			</div>
+		</div>
+	</section>
+	
+	
+		<!-- Section 1 of information  -->
+
+	
+	<section class="day-one">
+		<div class="text-content">
+			  <h2>DAY <span style="color:#ffd737">1</span> </h2>
+			  <p>Students will congregate with their form class. They will need to have his day pack/ backpack with lunch, water bottle, sun hat, a warm jumper/thermal and rain jacket. In addition he will have one overnight bag, with the gear listed below, and a tent if you are providing one. The day pack must be separate from the overnight bag. Please wear appropriate sports clothing with lace up sports shoes with good grip. No denim please. Bring your own medication if required.</p><br>
+
+<p>Once the roll has been taken we will catch a private bus to Wainui.</p><br>
+
+<p>Students will be taken straight to camp Wainui where he will first construct a tent with his friends and put his overnight bag inside. We have a large camping area at the back of the camp as well as the use of the hall and kitchen and toilets in the huts.</p><br>
+
+<p>There are a few showers available but we would strongly discourage the use of the showers where possible as it takes a while for 260 people to shower and we are only away for one night.</p><br>
+			
+<p><strong>Attribution: Camp Wainui, Photo by Mia Harada</strong></p>
+		</div>
+			<div class="image-container">
+			  <img src="images/kayak.jpg"  class="right-image"  alt="kayaking">
+				
+			</div>
+  </section>
+	
+	
+	<!-- Section 2 of information  -->
+	
+	
+	<section class="day-two">
+		  <div class="image-container">
+			<img src="images/hike_waiting.jpg" alt="people waiting on a bench" class="left-image" />
+		  </div>
+		  <div class="text-content">
+			<h2>DAY <span style="color:#ffd737">2</span></h2>
+			<p>We will wake nice and early and have a breakfast of cereals, toast and spreads.</p><br>
+
+			<p>Tents will be packed down and overnight bags packed. These will be left in a pile ready for the buses to pick them up in the afternoon.</p><br>
+
+			<p>Students will take their day pack with their second lunch and a water bottle, rain jacket and warm top/hat and board the bus to go 7kms down the road to the Catchpool carpark in the Remutaka Valley Park. From here he will walk the Orongorongo track in and out of the valley (5.2km each way). Please note, there is a track detour right at the end of the track due to a potential slip - we will be taking the detour that DOC has provided. On the way Students will learn some map reading skills and about local flora and fauna.</p><br>
+
+			<p><strong>Once in the valley, students will have lunch and also:</strong><br>
+			* Learn how to build their own hobo stoves for cooking in the bush.<br>
+			* If the river is at its usual height of up to calf depth and not fast flowing, we will learn about river crossings. If there has been more rainfall than usual and the river is deeper or more fast flowing, this will be cancelled.</p>
+
+			<p>Then we will head back along the track to the car park where a private bus will pick us up and transport us back to school for around 3.30pm.</p>
+		  </div>
+	</section>
+	
+
+	
+	<!--Timings-->
+	
+	<section id="timings">
+		<div class="container">
+			<div class="row">
+				
+				<h1>Timings</h1>
+				<hr>
+			</div>
+			<div class="icons">
+				<div class="icon">
+					<div class="image-section">
+						<i class="fa-solid fa-clock"></i>
+					</div>
+					<div class="icon-content">
+						<h4>TIME</h4>
+						<p>8:30am</p>
+					</div>
+				</div>
+				
+				<div class="icon">
+					<div class="image-section">
+						<i class="fa-solid fa-location-dot"></i>
+					</div>
+					<div class="icon-content">
+						<h4>LOCATION</h4>
+						<p>The front of the school hall - look for your form class when you arrive</p>
+					</div>
+				</div>
+				
+				<div class="icon">
+					<div class="image-section">
+						<i class="fa-solid fa-calendar-days"></i>
+					</div>
+					<div class="icon-content">
+						<h4>DATE</h4>
+						<p>TBC</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<!--Gear list-->
+	
+	<section id="gear-list">
+		<div class="container">
+			<h1>GEAR LIST</h1>
+			<hr>
+				<div class="gear-list-camp">
+				<form>
+					<h1>DAY PACK</h1>
+					<p>
+						<input type="checkbox" id="test" name="gear">
+						<label for="test">Lunch</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test2" name="gear">
+						<label for="test2">Water bottle</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test3" name="gear">
+						<label for="test3">Sun hat</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test4" name="gear">
+						<label for="test4">Sunscreen</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test5" name="gear">
+						<label for="test5">Warm jumper/jersey</label>
+					</p>
+
+				</form>
+				
+
+				<form>
+					<h1>NIGHT PACK</h1>
+					<p>
+						<input type="checkbox" id="test6" name="gear">
+						<label for="test6">Full change of clothes</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test7" name="gear">
+						<label for="test7">Sleeping bag + Pyjamas</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test8" name="gear">
+						<label for="test8">Toiletries</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test9" name="gear">
+						<label for="test9">Towel and Togs</label>
+					</p>
+
+					<p>
+						<input type="checkbox" id="test10" name="gear">
+						<label for="test10">Torch</label>
+					</p>
+
+				</form>
+
+			</div>
+		</div>
+	</section>
+
+	
+	<!--Reminder-->
+	
+	<section id="reminder">
+		<div class="container">
+			<h1><span style="color:#ffd737"> !</span> IMPORTANT <span style="color:#ffd737">!</span></h1>
+		
+		</div>
+	</section>
+	
+	
+	<!--Reminder 1-->
+	
+	<div id="reminder-one">
+		<div class="container">
+			<div class="image">
+				<img src="images/phone.png" alt="phone image">
+			</div>
+			<div class="text">
+				<p>Cell phone coverage at camp is very limited. In an emergency, if you can't reach your child on their mobile, please contact the school during hours or Camp Wainui after hours at (04) 564 5305. Charging points are scarce, so we recommend students bring a power bank or keep phones on aeroplane mode to save battery. Devices should not be used during camp, but phones can be turned on upon return to school if needed for pickup arrangements.
+</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--Reminder 2-->
+	
+	<div id="reminder-two">
+		<div class="container">
+			<div class="text">
+				<p>Caregivers agreed in the permission slip to discuss camp rules with their child, including no alcohol, vaping, smoking, or drugs, and to follow all rules. Violating these rules will result in a call for pickup and possible school consequences. After lights out, students must remain in their tents</p><br>
+				
+				<p><a href="https://docs.google.com/forms/d/1bbBkW2tXelGFnS8Mh2fzqwdKK3wPFGJjuQBy8q4dZkQ/previewResponse" target="_blank"><strong>For Permission slips click here</strong></a></p>
+			</div>
+			<div class="image">
+				<img src="images/alcohol.png" alt="no alcohol sign">
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--Reminder 3-->
+	
+	<div id="reminder-three">
+		<div class="container">
+			<div class="image">
+				<img src="images/payment.png" alt="credit card with coin">
+			</div>
+			<div class="text">
+				<p>If you have not yet paid, please do so immediately. If payment is a problem, please let me know. The total cost for the four days is $80. If you have a personalised programme due to injuries etc, please contact the school office, and they will advise you on how much you need to pay. If you wish to pay via internet banking, please use the following:
+</p><br>
+				<p><strong>Details are Tawa College, 123192-0011938-00. Please include 'Calitz, Joshua' and 'EOTC' in the reference box.</strong></p>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!--Reminder 4-->
+	
+	<div id="reminder-four">
+		<div class="container">
+			<div class="text">
+				<p>A reminder, students need to bring their own packed lunches for both days. Please ensure your child has enough food to sustain them on the 10km walk and for the activities at camp. Water bottles can be refilled from the camp taps.</p>
+			</div>
+			<div class="image">
+				<img src="images/lunch.png" alt="lunchbox">
+			</div>
+		</div>
+	</div>
+		
+
+	
+	<section class="footer">
+		<div class="footer-content">
+			<img src="images/logo.png" class="footerlogo" alt="tawa college logo">
+			<p>Copyright © Tawa College 2025<br> 
+				All Rights Reserved </p>
+		</div>
+		
+		<div class="footer-content">
+			<h4>QUICKLINKS</h4>
+			<li><a href="index_v8.html">Home</a></li>
+			<li><a href="page3_v3.html">Adrenalin Forest + Pool</a></li>
+			<li><a href="page4_v3.html">Rangituhi walk</a></li>
+			<li><a href="page5_v3.html">Community Service</a></li>
+			<li><a href="page6_v3.html">Contact</a></li>
+		</div>
+		
+		<div class="footer-content">
+			<h4>CONTACT</h4>
+			<li><i class="fa-solid fa-phone"></i>+64 4324 818</li>
+			<li><i class="fa-solid fa-envelope"></i>Secetary@tawacollege.school.nz</li>
+			<li><a href="https://www.google.com/maps/place/Tawa+College/@-41.1649001,174.8290334,17z/data=!3m1!4b1!4m6!3m5!1s0x6d38accc90e953a3:0x233e7c6fb066360a!8m2!3d-41.1649001!4d174.8316137!16zL20vMGd6X3lj?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D"></a><i class="fa-solid fa-location-dot"></i>34 Duncan Street, Tawa, Wellington</li>
+		</div>
+		
+	</section>
+	
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]');
+	</script>
+	
+</body>
+</html>
+
+

@@ -1,0 +1,2096 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+	scroll-behaviour: smooth;	
+	
+}
+
+body {
+	margin: 0;	
+	font-family: "Open Sans", sans-serif;
+}
+
+
+/*Tawa college logo*/
+.logo-container {
+  display: flex;
+  justify-content: left;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.logo {
+  position: absolute; /* fixed maybe could use absolute if you dont want it to move when scrolling */
+  top: 0;
+  left: 0;
+  margin-left: 50px;
+  width: 5%; /* changed the width evenly */
+  margin-top: 20px; 
+}
+
+.logo-image {
+  height: 60px;  /* adjust this if you change the width above this code*/
+  width: auto;   /* maintains the aspect ratio */
+  display: block;
+}
+
+
+
+
+
+/*Navigation*/
+
+#sidenav {
+	width: 400px;
+	height: 100vh; /*it will take full vertical space*/
+	position: fixed; /*to stay in one position (so when it scrolls it will stay there)*/
+	right: 400px;
+	top: 0;
+	background: #c51e1d;
+	z-index: 2;
+	transition: 0.5s; /*when its coming out and ins*/
+	
+}
+
+#sidenav .menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#menuBtn {
+	position: fixed;
+	right: 65px;
+	top: 35px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+	
+	
+}
+
+nav ul li a{
+	text-decoration: none;	
+	color: white;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #000;
+	margin: 6px 0;
+	border-radius: 2px;
+	transition: all 0.4s ease;
+	transform-origin: center;
+}
+
+.change .bar1 {
+	transform: rotate(45deg) translate(10px, 7px);
+    transform-origin: center;
+	background-color: white; /*changes the color of the x*/
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: translateY(-10px) rotate(-45deg);
+	background-color: white;
+}
+
+
+
+
+/*main section*/
+
+
+
+
+
+#main {
+	background-image: url(../images/EOTCWEEK.png);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	
+}
+
+
+
+#main h1{
+	text-align: center;	
+	
+}
+
+.container {
+	max-width: 1200px;
+	padding: 16px;
+	margin: auto;
+	
+}
+
+
+
+.section-title h1{
+	font-size: 50px;
+	text-align: center;
+
+	
+}
+
+.section-title hr {
+	width: 150px;
+	height: 4px;
+	border: 10px;
+	background: black;
+	margin-top: -30px;
+	
+	
+}
+
+
+section {
+	margin: 80px auto;	
+	
+}
+
+#welcome h1{
+	text-align: center;	
+	font-size: 70px;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+	
+}
+
+#welcome h2{
+	text-align: center;	
+	font-size: 50px;
+	
+	
+}
+
+
+/*what is eotc headline stopper*/
+
+#headstopper{
+	
+	background-color: #0e015c;
+	
+}
+
+#headstopper .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: auto;
+	gap: 16px;
+	
+}
+
+#headstopper h1{
+	font-size: 70px;
+	text-align: center;
+	color: white;
+	
+}
+
+
+
+
+
+
+
+/*About EOTC*/
+
+#about-eotc{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 120px;	
+}
+
+#about-eotc .container .about-content{
+	
+	max-width: 650px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-wrap: wrap;
+
+}
+
+#about-eotc .container .about-content img {
+	
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	gap: 45px;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	
+}
+
+
+
+
+
+
+
+/*Why not headstopper (2nd headstopper)*/
+
+#headstopper2 {
+		
+	background-color: #a10f0f;
+	
+}
+
+#headstopper2 .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: auto;
+	gap: 16px;	
+}
+
+
+#headstopper2 h1{
+	font-size: 70px;
+	text-align: center;
+	color: white;  
+	
+}
+
+/*about more section*/
+
+#about-more {
+	background-color: #0e015c;	
+	
+}
+ 
+#about-more img{
+	width: 550px;	
+	height: 450px;
+	object-fit: cover;
+	vertical-align: middle;
+	border-radius: 50px;
+	
+}
+
+#about-more .image{
+	max-width: 100%;
+	
+}
+
+
+#about-more .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap; /*If it exceeds the available space it should wrap below*/
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+	
+	
+}
+
+
+#about-more .text{
+	flex: 1;
+	flex-wrap: wrap;/*If it exceeds the available space the text should wrap mulitple lines below*/
+	
+}
+
+#about-more h1 {
+	color: white;
+	
+}
+
+#about-more p {
+	color: white;
+}
+
+
+
+
+
+
+/*Activites section*/
+
+.color-line {
+	display: flex;
+	width: 100%;
+	max-width: 400px; 
+	height: 5px;       
+	margin: 20px auto; 
+	margin-top: -30px;
+}
+
+.color-line div {
+	flex: 1; /* Equal width for each color segment */
+}
+
+.blue {
+	background-color: #20367d;
+}
+
+.yellow {
+	background-color: #ffde59;
+}
+
+.red {
+	background-color: #c51e1d;
+}
+
+.activites {
+	margin-top: 80px;
+	display: flex;
+	gap: 45px;
+	justify-content: center;
+	flex-wrap: wrap;
+		
+}
+
+.activity {
+	max-width: 500px;	
+	
+}
+
+.activity img {
+	width: 500px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.activity img:hover {
+	
+	transform: translateY(-10px);/*When hovered the image will move slightly up*/
+	
+}
+
+
+/*question section*/
+
+#question h1{
+	
+	font-size: 100px;
+	text-shadow: 4px 2px 4px #A29C9B;
+		
+	
+	
+}
+
+/*This footer applies to all pages*/
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	gap: 5.5rem;
+	background: #eae6ea; 
+	padding: 80px 13% 70px;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 70px 70px 0 0;
+	margin-bottom: -10px;
+	
+}
+
+.footerlogo{
+	width: 150px;
+	margin-top: 50px;
+	
+}
+
+.footer-content h4{
+	color: black;
+	margin-bottom: 1.5rem;
+	font-size: 20px;
+	
+	
+}
+
+.footer-content li{
+	margin-bottom: 16px;	
+	list-style-type: none;
+
+	
+}
+
+.footer-content li a{
+	display: block;
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.footer-content li a:hover{
+	color: #a10f0f;
+}
+
+.footer-content{
+	color: #424344;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 10px 0;
+}
+
+.footer-content p{
+	text-align: center;
+	margin-left: -230px;
+	
+}
+
+
+i {
+	width: 50px;
+	color: black;
+	height: 70px;
+	
+}
+
+
+
+
+
+
+
+
+
+/*Page 2 css*/
+
+
+#camp-header{
+	background-image: url(../images/campheader.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center; /* Centers horizontally */
+    align-items: center;  
+	display: flex;	
+	
+}
+
+#camp-header .container{
+	margin-right: 100px;
+	margin-left: 100px;	
+	
+	
+}
+
+#camp-header h1 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 5px #ffd737;
+}
+
+/*This mini nav applies to all pages except home and contact page*/
+
+.mini-icon i{
+	color: black;
+	font-size: 50px;
+	
+}
+
+#mini-nav ul{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 20px 0;
+	display: flex; /*puts them side by side*/
+	align-items: center; /*aligns the icons to the center*/
+	justify-content: center;
+	
+}
+
+#mini-nav ul li{
+	list-style: none;/*to get rid of the dots*/
+	text-align: center;
+	display: block;
+}
+
+
+#mini-nav ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block; 
+	
+}
+
+
+#mini-nav ul li a:link{
+	color: black;	
+	
+}
+
+
+#mini-nav ul li a:visited{
+	color: black;
+	text-decoration: none;
+	
+}
+
+
+#mini-nav hr {
+	width: 50%;
+	
+}
+
+
+
+#about-text h1{ /*ALL HEADLINE STOPPERS SHOULD BE AT LEAST 80px*/
+	color: black;
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+
+}
+
+
+
+
+#image-carousel { /*because there are 2 image carousels in this website this is carousel number 1*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.slider-images {  /* This code basically lines up the images vertically*/
+	display: flex;
+	align-items: center;
+	gap: 21px;
+	
+}
+
+.slider-images img {   /*controls the size of the image*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	/*fits in that section*/
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.slider-img{
+	width: 50px;
+	border-radius: 6px;
+	cursor: pointer;
+	position: relative;
+	transition: 0.7s ease;
+	
+}
+
+ /* Instead of the first child and nth-child this just controls all cards to give the same height and weidth*/
+.slider-images .slider-img{  
+	height: 400px;
+	width: 200px;
+	
+}
+
+#image-carousel h1{
+	font-size: 50px;
+	text-align: left;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left:-10%;
+	transform: rotate(270deg); /*makes it look on the side*/
+	margin-bottom: -10px
+}
+
+
+
+#key-info-headline h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+}
+
+
+#key-info .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
+	
+}
+
+#key-info .box-one {
+	height: auto;
+	width: 500px;
+	background-color: #efefef;
+	border-radius: 60px;
+
+	
+}
+
+#key-info .box-one-text{
+	margin: 60px 40px 80px 40px	
+}
+
+#key-info .box-one-text p{
+	font-size: 15px;	
+	line-height: 1.9rem;
+}
+
+#key-info .box-one-text h2 a{
+	font-size: 17px;
+	color: black;
+	text-decoration: none;
+}
+
+#key-info .box-one-text h2 a:hover{
+	text-decoration: none;
+	color: #a10f0f;
+}
+
+#key-info .box-one-text h1{
+	font-size: 23px;
+	color: #0e015c;
+}
+
+#key-info .box-two{
+	height: 400px;
+	width: 500px;
+	background-image: url(../images/campsite.jpg);
+	background-size: cover; /*to make sure that image fits the whole shape*/
+	background-position: bottom center;
+	border-radius: 10px 30px 30px 10px; /*top left, top right, bottom right, bottom left*/
+	
+}
+
+#key-info .box-two p{
+	font-size: 13px;
+	margin-left: 20px;
+	color: white;
+	
+	
+}
+
+
+
+
+.day-one {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
+    flex-wrap: wrap;
+    width: 100vw;       
+    height: auto; 
+	margin-bottom: -80px;
+}
+
+.text-content, .image-container {
+    width: 50%;
+
+}
+
+
+.day-one .text-content {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0e015c; /*background color for the text bit */
+	word-wrap: break-word; /*makes sure that the words don't go out of the box where the text is and goes into the image*/
+}
+
+
+.day-one .text-content h2 {
+    margin-left: 40px;
+	color: white;
+	margin-top: -10px;
+	font-size: 30px;
+
+}
+
+
+.day-one .text-content p{
+    padding-left: 40px;
+	padding-right: 50px;
+	color: white;
+	font-size: 15px;
+	line-height: 1.5rem;
+
+
+}
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.right-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.day-two {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;       
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.image-container, .text-content {
+	width: 50%;
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.day-two .text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white; 
+	word-wrap: break-word;
+
+
+}
+
+.day-two .text-content h2 {
+	padding-left: 40px;
+	color: #20367d;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+.day-two .text-content p {
+	padding-left: 40px;
+	padding-right: 30px;
+	color: #20367d;
+	font-size: 15px;
+	line-height: 1.4rem;
+
+}
+
+
+#important-text{
+	position: sticky	
+	
+}
+
+#important-text h1{ /*This applied to all ids with important in that html page*/
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #ffd737;
+	
+}
+
+#timings { /*This applied to all ids with important in that html page*/
+	width: 100%	
+	
+}
+
+#timings .container{
+	width: 100%
+	margin: auto;
+	margin-top: 200px;
+	
+}
+
+#timings .container .row{
+	width: 80%;
+	margin: auto;
+	
+}
+
+
+#timings h1{
+	font-size: 50px;
+	text-align: center;
+
+	
+	
+}
+
+
+#timings hr{
+	height: 5px;
+	background-color: #ffd737;
+	width: 40%;
+	margin-top: -20px;
+	border: #ffd737;
+	
+}
+
+
+
+
+#timings .container .icons{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 100px;
+	margin-top: 70px;
+		
+}
+
+#timings .container .icons .icon{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	
+}
+
+#timings .container .icons .icon .image-section i{
+	font-size: 100px;
+	color: black;
+	padding-right: 40px;
+}
+
+#timings .container .icons .icon .image-section .fa-location-dot{
+	padding-right: 30px;
+}
+
+
+#timings .container .icons .icon .icon-content {
+	width: 100%;
+	text-align: center;
+	
+}
+
+
+#timings .container .icons .icon .icon-content h4{
+	font-size: 27px;
+	margin-top: 20px;
+	letter-spacing: 1.5px;
+	color: black;
+	
+	
+}
+
+#timings .container .icons .icon .icon-content p {
+	font-size: 17px;
+	margin-top: -20px;
+	letter-spacing: 1.5px;
+	color: grey;
+	
+}
+
+
+
+#gear-list .gear-list-camp {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	
+
+}
+
+#gear-list .gear-list-camp form h1{
+	font-size: 40px;	
+	
+}
+
+
+#gear-list .gear-list-camp form p{
+	text-align: center;
+		
+}
+
+
+#gear-list h1 { /*This applied to all ids with important in that html page except the camp wainui one*/
+	font-size: 50px;
+	text-align: center;
+	
+}
+
+#gear-list hr {
+	height: 5px;
+	background-color: #c51e1d;
+	border: #c51e1d;
+	width: 30%;
+	margin-top: -20px;
+	margin-bottom: 30px;
+	
+}
+
+#gear-list form p{
+	text-align: center;
+		
+}	
+	
+
+
+input[type="checkbox"] {
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+label {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+
+[type="checkbox"]{
+	opacity: 0;
+	
+	
+}
+
+[type="checkbox"] + label{
+	position: relative; /*to shift the boxes*/
+	padding-left: 30px;
+	cursor: pointer;
+	display: inline-block;
+	color: #666; /*outline color*/
+	line-height: 25px;
+	font-size: 18px;
+	
+}
+
+[type="checkbox"] + label::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	outline: 2px solid #aaa;
+	background: white;
+	
+}
+
+[type="checkbox"]:checked + label::before{/*There will be no checked box before it is clicked*/
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	outline: 2px solid #5fd25f;
+	background: white;	
+	
+}
+
+
+[type="checkbox"]:checked + label::after{ /*after it is cliked the image in image background will appear*/
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	background-image: url("../images/tick.png");
+	background-size: contain;
+	transform: scale(1);
+	opacity: 1;
+	transition: all .3s ease;
+	
+}
+
+
+[type="checkbox"]:not(:checked) + label::after{ /*selecting all the checkboxes that are NOT checked */
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	background-image: url("");
+	background-size: contain;
+	transform: scale(0);
+	opacity: 0;
+	
+}
+
+/*Important reminders section*/
+
+#reminder h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+}
+
+
+#reminder-one {
+	
+	background-color: #20367d;
+}
+
+#reminder-one img {
+	
+	max-width: 500px;
+	object-fit: cover;
+	vertical-align: middle;
+	
+	
+}
+
+
+
+#reminder-one .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+
+	
+	
+}
+
+#reminder-one .text {
+	flex: 1	;
+	
+}
+
+
+#reminder-two img {
+	max-width: 550px;
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+#reminder-two .text p a{
+	color: #0e015c;
+}
+
+#reminder-two .text p a:hover{
+	color: #a10f0f;
+}
+
+
+#reminder-two .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;	
+}
+
+
+#reminder-two .text {
+	flex: 1	;
+	
+}
+
+
+#reminder-three {
+	
+	background-color: #20367d;
+}
+
+
+#reminder-three img {
+	
+	max-width: 550px;
+	object-fit: cover;
+	vertical-align: middle;
+	
+	
+}
+
+
+#reminder-three .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+	
+	
+}
+
+#reminder-three .text {
+	flex: 1	;
+	
+}
+
+#reminder-four img {
+	
+	max-width: 550px;
+	object-fit: cover;
+	vertical-align: middle;
+	
+	
+}
+
+
+
+#reminder-four .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+	
+	
+}
+
+#reminder-four .text {
+	flex: 1	;
+	
+}
+
+#reminder-one .text p,
+#reminder-three .text p{
+	color: #fff;
+	line-height: 1.9rem;
+	
+}
+
+
+#reminder-two .text p,
+#reminder-four .text p{
+	color: #0e015c;
+	line-height: 1.9rem;
+	
+}
+
+
+
+
+/*Page 2*/
+
+/*About adrenaline forest*/
+
+#adren-header{
+	background-image: url(../images/adrenalinforest.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center; /* Centers horizontally */
+    align-items: center;  
+	display: flex;	
+	
+}
+
+#adren-header .container{
+	margin-right: 100px;
+	margin-left: 100px;	
+	
+}
+
+#adren-header h1 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 5px #ffd737;
+}
+
+#adrenaline-headline h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+		
+}
+
+
+#forest {
+	background-color: #efefef;
+	line-height: 1.9rem;
+}
+
+#forest img {
+	
+	max-width: 550px;
+	object-fit: cover;
+	vertical-align: middle;
+	border-radius: 50px;
+	
+	
+}
+
+#forest h1{
+	font-size: 35px;
+	color: #0e015c;
+	
+}
+
+#forest h2{
+	font-size: 20px;
+	
+	
+}
+
+#forest p{
+	font-size: 16px;	
+	
+}
+
+#forest a{
+	text-decoration: none;	
+}
+
+#forest h2 a:link{
+	color: black;	
+	
+}
+
+#forest h2 a:active{
+	color: black;
+	
+	
+}
+
+#forest h2 a:visited{
+	color: black;
+}
+
+#forest h2 a:hover{
+	color: #a10f0f;
+	
+}
+
+
+
+
+#forest  .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+
+	
+	
+}
+
+#forest  .text {
+	flex: 1	;
+	
+}
+
+/*about the pool*/
+
+
+#pool-headline{
+	background-color: #0e015c;	
+}
+
+#pool-headline h1 {
+	font-size: 80px;
+	text-align: center;
+	color: white;
+	
+}
+
+#pool {
+	background-color: #efefef;
+	line-height: 1.9rem;
+	
+}
+
+#pool h1{
+	font-size: 35px;
+	color: #0e015c;
+	
+}
+
+#pool h2{
+	font-size: 20px;
+	text-decoration: none;
+	
+}
+
+#pool a{
+	text-decoration: none;
+	color: black;
+}
+
+#pool h2 a:active{
+	color: black;
+	
+	
+}
+
+#pool h2 a:visited{
+	color: black;
+}
+
+#pool h2 a:hover{
+	color: #a10f0f;
+	
+}
+
+#pool p{
+	font-size: 16px;
+	
+}
+
+
+
+#pool img {
+	
+	max-width: 550px;
+	object-fit: cover;
+	vertical-align: middle;
+	border-radius: 50px;
+	
+	
+}
+
+
+
+#pool .container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5rem;
+	
+}
+
+#pool .text {
+	flex: 1	;
+	
+}
+
+
+
+
+
+/*Key information about both activites*/
+
+.forest-keyinfo1 {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
+    flex-wrap: wrap;
+    width: 100vw;       
+    height: auto; 
+	margin-bottom: -80px;
+}
+
+.forest-keyinfo1 .text-content {
+    display: flex; /*Lines up the image with the text (gives the side by side look)*/
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0e015c; /*background color for the text bit */
+	word-wrap: break-word; /*makes sure that the words don't go out of the box where the text is and goes into the image*/
+}
+
+
+.forest-keyinfo1 .text-content h2 {
+    margin-left: 40px;
+	margin-right: 50px;
+	color: white;
+	margin-top: 10px;
+	font-size: 30px;
+	line-height: 2.3rem;
+	
+
+}
+
+
+.forest-keyinfo1 .text-content p{
+    margin-left: 40px;
+	margin-right: 50px;
+	color: white;
+	font-size: 16px;
+	line-height: 1.9rem;
+	margin-bottom: -10px;
+	
+
+}
+
+
+
+.forest-keyinfo2 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;       
+	height: 600px;
+	margin-bottom: -10px;
+}
+
+
+
+.forest-keyinfo2 .text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white; 
+	word-wrap: break-word;
+	line-height: 1.5rem;
+
+}
+
+.forest-keyinfo2 .text-content h2 {
+	margin-left: 40px;
+	color: #20367d;
+	font-size: 30px;
+	margin-top: 40px;
+	margin-right: 50px;
+	line-height: 2.3rem;
+}
+.forest-keyinfo2 .text-content p {
+	margin-left: 40px;
+	margin-right: 60px;
+	color: #20367d;
+	font-size: 16px;
+	line-height: 1.9rem;
+	margin-bottom: -10px;
+}
+
+#last-headline h1{
+	text-align: center;
+	font-size: 80px;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+}
+
+iframe {
+	margin-left: 320px;
+	
+}
+
+
+
+/*Page 4*/
+
+#rangi-header {
+	background-image: url(../images/rangituhi_image1.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center; /* Centers horizontally */
+    align-items: center;  
+	display: flex;	
+	
+}
+
+#rangi-header .container{
+	margin-right: 100px;
+	margin-left: 100px;
+
+}
+
+#rangi-header h1 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 5px #ffd737;
+}
+
+#nature-healine h1 {
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+}
+
+/*Information about the walk*/
+
+#rangi-info .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
+	
+}
+
+#rangi-info .box-one {
+	height: auto;
+	width: 500px;
+	background-color: #efefef;
+	border-radius: 60px;
+
+	
+}
+
+#rangi-info .box-one-text{
+	margin: 60px 50px 80px 50px;
+	
+}
+
+#rangi-info .box-one-text p{
+	font-size: 16px;
+	line-height: 2.1rem;
+	
+}
+
+#rangi-info .box-one-text h2{
+	font-size: 18px;
+	color: black;
+	
+}
+
+#rangi-info .box-one-text h2 a{
+	text-decoration: none;	
+	color: black;
+	
+}
+
+#rangi-info .box-one-text h2 a:hover{
+	text-decoration: none;
+	color: #a10f0f; 
+	
+}
+
+#rangi-info .box-one-text h1{
+	font-size: 21px;
+	color: #0e015c;
+	
+}
+
+
+#rangi-info .box-two{
+	height: 400px;
+	width: 450px;
+	background-image: url(../images/rangituhi_image5.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	object-fit: cover;
+	border-radius: 10px 30px 30px 10px;
+}
+
+/*image carousel to show the views*/
+
+#view-headline {
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+		
+}
+
+
+#image-carousel2{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	
+}
+
+#image-carousel2 .contain{
+	width: 60%;
+	height: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 20px solid #fff;
+	border-radius: 8px;
+	box-shadow: 10px 25px 30px rgba(0,0,0,0.23);
+	margin: 0 auto;
+	
+	
+	
+	
+}
+
+#image-carousel2 .wrapper  {
+	width: calc(300%);
+	display: flex;
+	animation: slide 15s infinite;
+	
+	
+}
+
+#image-carousel2 img{ 
+	width: 33.3333%;
+	flex-shrink: 0;
+	
+}
+
+@keyframes slide { /*because there are 3 images the x value divded by 3*/
+  0%, 25% {
+    transform: translateX(0);
+  }
+  30%, 50% {
+    transform: translateX(-33.3333%);
+  }
+  55%, 75% {
+    transform: translateX(-66.6666%);
+  }
+  80%, 100% {
+    transform: translateX(0);
+  }
+}
+
+
+/*Key information for students*/
+
+.rangikey-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;       
+    height: auto;
+	margin-bottom: -80px;
+}
+
+.text-content, .image-container {
+    width: 50%;
+
+}
+
+
+.rangikey-info .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0e015c; /* background color for the text section */
+	word-wrap: break-word;
+}
+
+
+.rangikey-info .text-content h2 {
+    margin-left: 50px;
+	color: white;
+
+}
+
+
+.rangikey-info .text-content p{
+    margin-left: 50px;
+	color: white;
+	margin-right: 100px;
+	line-height: 1.9rem;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+/*Page 5*/
+
+#community-header {
+	background-image: url(../images/communityheader.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center; /* Centers horizontally */
+    align-items: center;  
+	display: flex;	
+	
+}
+
+#communtiy-header{
+	margin-right: 100px;
+	margin-left: 100px;		
+	
+}
+
+#community-header h1 {
+	font-size: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 5px #ffd737;
+}
+
+#community-headline h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+}
+
+/*About community service*/
+
+.community-about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;       
+    height: auto;
+	margin-bottom: -80px; /*to close the two sections together (theres a gap between them)*/
+}
+
+.community-about .text-content p{
+	color: white;
+	padding-right: 100px;
+	line-height: 2.1rem;
+	font-size: 16px;
+	margin-left: 30px;
+	
+}
+
+.community-about .text-content h2{
+	padding-left: 30px;
+	padding-top: 150px;
+	font-size: 30px;
+	color: white;
+	
+}
+
+.community-about .text-content{
+	background-color: #a10f0f;	
+	
+}
+
+
+#community-headline2 h1{
+	font-size: 80px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #A29C9B;
+	
+}
+
+/*key information for students*/
+
+.community-keyinfo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;       
+    height: auto;
+	margin-bottom: -80px;
+}
+
+.community-keyinfo .text-content {
+	background-color: #0e015c;	
+	
+}
+
+.community-keyinfo .text-content p{
+	color: white;
+	margin-right: 80px;
+	line-height: 2.1rem;
+	font-size: 16px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	
+}
+
+.community-keyinfo .text-content h2{
+	padding-left: 30px;
+	padding-top: 80px;
+	font-size: 30px;
+	color: white;
+	
+}
+
+
+
+
+
+
+
+/*Page 6*/
+
+
+#contact-header {
+	background-image: url(../images/contactheader.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: bottom center;
+	justify-content: center; /* Centers horizontally */
+    align-items: center;  
+	display: flex;
+
+}
+
+#contact-header .container{
+	margin-right: 100px;
+	margin-left: 100px;	
+	
+}
+
+#contact-header h1 {
+	font-size: 70px;
+	color: #0e015c;
+	text-align: center;
+	text-shadow: 2px 5px #ffd737;
+}
+
+
+#contact .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+
+	
+}
+
+/*Contact form*/
+
+#contact .form{
+	width: 100%;
+	height: 600px;
+	max-width: 900px;
+	background-color: #fff; /*This is for the background of the WHOLE form*/
+	border-radius: 10px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
+}
+
+/*contact form fill out on the right*/
+.contact-form{
+	background-color: #0e015c;
+	position: relative;
+}
+
+
+#contact form{
+	padding: 2.3rem 1.5rem;
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.title{
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: `;
+	margin-bottom: 0.7rem;
+	
+}
+
+.input-container {
+	position: relative;
+	margin: 1rem 0;
+}
+
+
+
+.input {
+	width: 90%;
+	outline: none;
+	border: 2px solid #fff;
+	background: none;
+	padding: 0.6rem 1.2rem;
+	color: #fff;
+	border-radius: 25px;
+	
+}
+
+textarea.input{
+	padding: 0.8rem 1.2rem;
+	min-height: 150px;
+	border-radius: 22px;
+	resize: none;
+	overflow-y: auto; /*scroll bar*/
+	
+}
+
+.input-container label{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	padding: 0 0.4rem;
+	color: #fff;
+	font-size: 0.9rem;
+	pointer-events: none;
+	z-index: 1000;
+	background-color: #0e015c;
+}
+
+.input-container.textarea label{
+	top: 1rem;
+	transform: translateY(0);
+	
+}
+
+.btn{
+	padding: 0.6rem 1.3rem;
+	background-color: #fff;
+	border: 2px solid white;
+	font-size: 0.95rem;
+	font-weight: 700;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0;
+}
+
+.btn:hover{
+	background-color: #f6b618;
+	color: white;
+}
+
+.input-container span{
+	position: absolute;
+	top: 0;
+	left: 25px;
+	transform: translateY(-50%);
+	font-size: 0.8rem;
+	padding: 0 0.4rem;
+	color: transparent;
+	pointer-events: none;
+	z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after{
+	content:"";
+	position: absolute;
+	width: 10%;
+	opacity: 0;
+	transition: 0.3s
+	height: 5px;
+	background-color: #0e015c;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*aligning it to make it look like on element*/
+
+.input-container span:before{
+	left: 50%;	
+}
+
+.input-container span:after{
+	right: 50%;	
+}
+
+
+.input-container.focus label{
+	top: 0;
+	transform: translateY(-50%);
+	left: 25px;
+	font-size: 0.85rem;
+	
+}
+
+#contact .icon{
+	width: 20%;
+	margin-top: 20px;
+	
+	
+	
+}
+
+.contact-info {
+	padding: 2.3rem 2.2rem;
+	position: relative;
+	
+}
+
+.contact-info .title{
+	color: black;	
+	
+}
+
+.text {
+	color: black;
+	margin: 1.9rem 0 2 rem 0;
+	
+}
+
+.information{
+	display: flex;
+	color: black;
+	margin-top: 20px;
+	align-items: center;
+	font-size: 15px;
+	margin-bottom: -10p
+	
+}
+
+
+
+@media (max-width: 850px){
+	.form{
+		grid-template-columns: 1fr;
+	}
+	.contact-info:before {
+		bottom: initial;
+		top: -75px;
+		right: 65px;
+		transform: scale(0.95);
+	}
+	
+	.contact-form:before{
+		top: -13px;
+		left: initial;
+		right: 70px;
+	}
+}
+
+
+
+@media screen and (max-width: 520px) {
+		
+	#about-eotc .container{
+		
+		flex-direction: column;
+		gap: 16px;
+		
+	}
+	
+	.text-content, .image-container {
+        width: 100%;
+      }
+
+      .text-content {
+        padding: 20px;
+      }
+
+      .right-image {
+        height: auto;
+      }
+}
+
+
+@media screen and (max-width: 900px){
+		
+	#timings .container .icons{
+		grid-template-columns: repeat(2,1fr);	
+	}
+}
+
+
+
+/* Responsive code */
+
+@media screen and (max-width: 900px){   /* When it is less than 900px the icons will stack somewhat vertically */
+		
+	#timings .container .icons{
+		grid-template-columns: repeat(2,1fr);	 /* Changes grid layout to 2 columns taking up 1
+													fractions (1fr) of space available */
+	}
+}
+
+@media screen and (max-width: 768px){  /*When 768px or less*/
+	
+	#timings .container .icons{
+		grid-template-columns: 1fr; /*icons stack vertically*/
+		
+	}
+	
+	.footer{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, auto)); /*Makes as many columns as possible to fit in space,
+																	each column should be at least 150px*/
+		gap: 2.5rem; /*gap between columns*/
+	
+}

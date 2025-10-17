@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <title>EOTC | CONTACT</title>
+		<link rel="icon" type="image/x-icon" href="images/logo.png">
+
+		<meta charset="utf-8">
+
+		<meta name="keywords" content="EOTC, Tawa, Tawa College"/>
+
+		<meta name="author" content="Sherlyn Andrews"/>
+
+		<meta name="description" content="Everything to know about EOTC week."/>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+
+		<!-- Import the web page's style sheet and Javascript librarys -->
+	<link rel="stylesheet" href="css/style_v9.css">
+	<script src="https://kit.fontawesome.com/ab3ad18ef2.js" crossorigin="anonymous"></script><!--for icons-->   
+
+</head>
+
+
+<body>
+<!-- This is where my website content goes -->
+	
+	<nav id="sidenav">
+		<ul>	
+			<li><a href="index_v8.html">HOME</a></li>
+			<li><a href="page2_v4.html">CAMP WAINUI</a></li>
+			<li><a href="page3_v3.html">ADRENALIN + POOL</a></li>
+			<li><a href="page4_v3.html">RANGITUHI WALK</a></li>
+			<li><a href="page5_v3.html">COMMUNITY SERVICE</a></li>
+			<li><a href="page6_v3.html">CONTACT</a></li>
+		</ul>
+	</nav>
+	
+	<div class="menu"  id="menuBtn">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+	
+	<!--THIS IS THE CODE IS FOR THE SIDE NAV TO APPEAR-->
+	<script>
+		var menuBtn = document.getElementById("menuBtn");
+		var sidenav = document.getElementById("sidenav");
+		
+		sidenav.style.right = "-400px";
+        menuBtn.onclick = function() {
+		// toggle nav position
+		if (sidenav.style.right == "-400px") {
+		  sidenav.style.right = "0";
+		} else {
+		  sidenav.style.right = "-400px";
+		}
+		
+	  // toggle burger animation
+       this.classList.toggle("change");	
+		}	
+	
+	</script>
+
+	<div id="contact-header">
+		<div class="container">
+			<div class="logo-container">
+			<a href="index_v8.html"><img src="images/logo.png" class="logo" alt="Tawa college logo"></a>
+				
+		 </div>
+			<h1>CONTACT</h1>
+		 </div>
+	</div>
+
+	
+	<section id="contact">
+		<div class="container">
+			<div class="form">
+				<div class="contact-info">
+					<h3 class="title">Contact us!</h3>
+					<p class="text">
+						If you have any questions, querys or concerns please feel free to fill out this form or contact Tawa college through the email provided
+					</p><!--information/blurb-->
+					<div class="info">
+						<div class="information">
+							<img src="images/contactlocation.png" class="icon" alt="location icon">
+							<p>38A Duncan Street, Tawa, Wellington 5028</p><!--location-->
+						</div>
+						<div class="information">
+							<img src="images/contactemail.png" class="icon" alt="email icon">
+							<p>@secetary@tawacollege.school.nz</p><!--Tawa college phone-->
+						</div>
+						<div class="information">
+							<img src="images/contactphone.png" class="icon" alt="phone icon"><!--Tawa college number-->
+							<p>+64 232 8184</p>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="page6_v3.html"><!--if we need to send it to an email link it to formspree to send to a specific email-->
+						<h3 class="title">Contact Form</h3> 
+						<div class="input-container focus">
+							<input type="text" name="name" class="input" placeholder=" "><!--for Full name-->
+							<label for="name">Full Name</label>
+							<span>Full Name</span>
+						</div>
+						<div class="input-container focus">
+							<input type="email" name="email" class="input" placeholder=" "><!--For email-->
+							<label for="email">Email</label>
+							<span>Email</span>
+						</div>
+						<div class="input-container focus">
+							<input type="tel" name="phone" class="input" placeholder=" "><!--For phone number-->
+							<label for="phone">Phone</label>
+							<span>Phone</span>
+							
+						</div>
+						<div class="input-container textarea focus">
+							<textarea name="message" class="input" placeholder=" " ></textarea><!--For the message input-->
+							<label for="message">Message</label>
+							<span>Message</span>
+						</div>
+						<input type="submit" value="Send" class="btn" >
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+<!--footer-->	
+	<section class="footer">
+		<div class="footer-content">
+			<img src="images/logo.png" class="footerlogo" alt="Tawa college logo">
+			<p>Copyright © Tawa College 2025<br> 
+				All Rights Reserved </p>
+		</div>
+		
+		<div class="footer-content">
+			<h4>QUICKLINKS</h4>
+			<li><a href="index_v8.html">Home</a></li>
+			<li><a href="page2_v4.html">Camp Wainui</a></li>
+			<li><a href="page3_v3.html">Adrenalin Forest + Pool</a></li>
+			<li><a href="page4_v3.html">Rangituhi walk</a></li>
+			<li><a href="page5_v3.html">Community Service</a></li>
+		</div>
+		
+		<div class="footer-content">
+			<h4>CONTACT</h4>
+			<li><i class="fa-solid fa-phone"></i>+64 4324 818</li>
+			<li><i class="fa-solid fa-envelope"></i>Secetary@tawacollege.school.nz</li>
+			<li><a href="https://www.google.com/maps/place/Tawa+College/@-41.1649001,174.8290334,17z/data=!3m1!4b1!4m6!3m5!1s0x6d38accc90e953a3:0x233e7c6fb066360a!8m2!3d-41.1649001!4d174.8316137!16zL20vMGd6X3lj?entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i>34 Duncan Street, Tawa, Wellington</a></li>
+		</div>
+		
+	</section>
+
+
+</body>
+
+</html>
